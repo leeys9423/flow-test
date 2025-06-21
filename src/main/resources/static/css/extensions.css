@@ -1,0 +1,113 @@
+/* extensions.css */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.section {
+    border: 2px solid #333;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.section-title {
+    background: white;
+    padding: 5px 10px;
+    margin: -25px 0 15px 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.fixed-extensions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.fixed-extensions label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.custom-section {
+    margin-top: 15px;
+}
+
+.custom-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.custom-input input {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.custom-input button {
+    padding: 5px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.custom-list {
+    border: 1px solid #ccc;
+    min-height: 100px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.custom-item {
+    display: inline-block;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 3px 8px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.custom-item button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+
+.counter {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* 메시지 스타일 */
+.message {
+    padding: 10px;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.error {
+    padding: 10px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+/* 버튼 호버 효과 */
+.custom-input button:hover {
+    background: #e0e0e0;
+}
+
+.custom-item button:hover {
+    color: #dc3545;
+}

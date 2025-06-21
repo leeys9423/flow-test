@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파일 확장자 차단</title>
+    <link rel="stylesheet" th:href="@{/css/extensions.css}">
+    <script th:src="@{/js/extensions.js}"></script>
+</head>
+<body>
+
+<div class="section">
+    <div class="section-title">파일 확장자 차단</div>
+
+    <p>파일확장자에 따라 특정 형식의 파일을 첨부하거나 전송하지 못하도록 제한</p>
+
+    <!-- 고정 확장자 -->
+    <div>
+        고정 확장자
+        <div class="fixed-extensions" id="fixedExtensions">
+            <!-- JavaScript로 동적 로드 -->
+        </div>
+        <button type="button" onclick="saveFixedExtensions()">저장</button>
+    </div>
+
+    <!-- 커스텀 확장자 -->
+    <div class="custom-section">
+        커스텀 확장자
+        <div class="custom-input">
+            <input type="text" id="extensionInput" placeholder="확장자 입력" maxlength="20">
+            <button type="button" onclick="addCustomExtension()">+ 추가</button>
+        </div>
+
+        <div class="counter" id="customCounter">0/200</div>
+        <div class="custom-list" id="customExtensions">
+            <!-- JavaScript로 동적 로드 -->
+        </div>
+    </div>
+</div>
+
+<!-- 메시지 표시 -->
+<div id="messageArea"></div>
+
+</body>
+</html>
