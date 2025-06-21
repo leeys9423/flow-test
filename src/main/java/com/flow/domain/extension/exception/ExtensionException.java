@@ -46,4 +46,10 @@ public class ExtensionException extends BusinessException {
     public static ExtensionException notModifiable() {
         return new ExtensionException(ErrorCode.FIXED_EXTENSION_NOT_MODIFIABLE);
     }
+
+    public static ExtensionException duplicateWithFixed(String extension) {
+        return new ExtensionException(
+                ErrorCode.DUPLICATE_EXTENSION,
+                String.format("확장자 '%s'는 고정 확장자에 이미 포함되어 있습니다.", extension));
+    }
 }
