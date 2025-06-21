@@ -18,10 +18,10 @@ public class FixedExtension extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "extension_lower", length = 10, nullable = false, unique = true)
+    @Column(name = "extension_lower", length = 20, nullable = false, unique = true)
     private String extensionLower;
 
-    @Column(name = "extension_upper", length = 10, nullable = false)
+    @Column(name = "extension_upper", length = 20, nullable = false)
     private String extensionUpper;
 
     @Column(nullable = false)
