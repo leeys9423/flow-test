@@ -1,4 +1,4 @@
-package com.flow.domain.extension.api;
+package com.flow.domain.extension.controller.api;
 
 import com.flow.domain.extension.dto.request.ExtensionRequest;
 import com.flow.domain.extension.dto.response.ExtensionResponse;

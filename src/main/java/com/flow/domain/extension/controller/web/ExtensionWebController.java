@@ -1,4 +1,4 @@
-package com.flow.domain.extension.web;
+package com.flow.domain.extension.controller.web;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
